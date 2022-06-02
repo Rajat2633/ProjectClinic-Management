@@ -26,7 +26,7 @@ namespace ClinicAdoDl
         }
 
         //To Login in Database
-        public SqlDataReader account_user_login(string uname,string passwd)
+        public SqlDataReader? account_user_login(string uname,string passwd)
         {
            
             try

@@ -70,7 +70,7 @@ namespace ProjectClinic
                 var check_login = buslogic.account_login(uname, passwrd);
                 try
                 {
-                    if (check_login.Read())
+                    if (check_login!=null  && check_login.Read() )
                     {
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("\nLogin Succesfull!  Welcome \n ");

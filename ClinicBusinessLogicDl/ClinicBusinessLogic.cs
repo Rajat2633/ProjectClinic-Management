@@ -11,7 +11,7 @@ namespace ClinicBusinessLogicDl
         //method which connects with ado layer and get's account login verified
         public SqlDataReader account_login(string uname,string pwd)
         {
-            
+
             var result = cda.account_user_login(uname, pwd);
             return result;
 
@@ -74,7 +74,7 @@ namespace ClinicBusinessLogicDl
         }
         public string  Doc_lname(int dcid)
         {
-            var result = cda.extract_doc_fname(dcid);
+            var result = cda.extract_doc_lname(dcid);
             return result;
         }
 
