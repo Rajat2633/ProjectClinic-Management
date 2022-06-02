@@ -28,13 +28,23 @@ namespace ClinicAdoDl
         //To Login in Database
         public SqlDataReader account_user_login(string uname,string passwd)
         {
-            con = getcon(); //To Open The onnection
-            cmd = new SqlCommand("select * from UserAccounts where username=@uname and pwd=@passwd");
-            cmd.Connection = con;
-            cmd.Parameters.AddWithValue("@uname",uname );
-            cmd.Parameters.AddWithValue("@passwd", passwd);
-            SqlDataReader dr = cmd.ExecuteReader();
-            return dr;
+           
+            try
+            {
+                con = getcon(); //To Open The onnection
+                cmd = new SqlCommand("select * from UserAccounts where username=@uname and pwd=@passwd");
+                cmd.Connection = con;
+                cmd.Parameters.AddWithValue("@uname", uname);
+                cmd.Parameters.AddWithValue("@passwd", passwd);
+                SqlDataReader dr = cmd.ExecuteReader();
+                return dr;
+            }
+            catch(SqlException e)
+            {
+                Console.WriteLine(e.Message);
+                
+            }
+            return null;
         }
 
         //To fetch data from doctors table and show details
