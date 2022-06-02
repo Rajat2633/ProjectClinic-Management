@@ -36,7 +36,6 @@ namespace ProjectClinic
             //this var is used to run continuosly program in console
             int code_initiate = 1;
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine();
             Console.WriteLine("---------------------------------------Welcome to Clinical Management System--------------------------------------------");
             Console.ResetColor();
             do
