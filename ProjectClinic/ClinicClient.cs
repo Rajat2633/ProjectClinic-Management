@@ -66,7 +66,7 @@ namespace ProjectClinic
                 #endregion
                 Console.WriteLine();
                 ClinicBusinessLogic buslogic = new ClinicBusinessLogic();
-                //Method to check Username and password in database
+                //Method to check Username and password in the database
                 var check_login = buslogic.account_login(uname, passwrd);
                 try
                 {
