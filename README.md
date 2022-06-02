@@ -17,4 +17,9 @@ A working Screenshot is shown Below:-
  
  
  
-![Screenshot (122)](https://user-images.githubusercontent.com/106507195/171551743-b79f1112-ba42-4b1d-9b42-38cc215acf54.png)
+
+![Screenshot (124)](https://user-images.githubusercontent.com/106507195/171616461-3cf9bc5c-39e8-4c4f-a260-117ab3657c09.png)
+
+
+
+![Screenshot (125)](https://user-images.githubusercontent.com/106507195/171616473-cc5ec527-7600-4559-b02f-f7af334e75d4.png)
